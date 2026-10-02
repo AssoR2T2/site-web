@@ -1,0 +1,36 @@
+RewriteEngine on
+
+RewriteBase /~uapv2402240/
+
+php_value upload_max_filesize 50M
+php_value post_max_size 100M
+php_value max_file_uploads 20
+
+RewriteRule Accueil$ index.php
+RewriteRule Recherche$ control/Recherche.php
+RewriteRule Signalement$ control/Signalement.php
+RewriteRule Contact$ control/Contact.php
+RewriteRule Connection$ control/LogSign.php?page=Login
+RewriteRule Inscription$ control/LogSign.php?page=SignIn
+RewriteRule Confirmation-([a-zA-Z0-9_]*)$ control/Confirmation.php?page=$1
+RewriteRule Objet-([0-9]*)$ control/Objet.php?id=$1
+RewriteRule MonProfil$ control/PageProfile.php
+RewriteRule ModifUtil$ control/ModifUtil.php
+RewriteRule Mes-Objet$ control/voirObjet.php
+RewriteRule Mention-Légale$ control/MentionLegale.php
+RewriteRule Modification_de_Objet-([0-9]*)-([a-zA-Z0-9_]*)$ control/ModifObjet.php?idObjet=$1&nomObjet=$2
+
+RewriteRule Accueil-administrateur$ admin/control/main.php [QSA]
+RewriteRule Recherche-administrateur$ admin/control/Recherche.php [QSA]
+RewriteRule Signalement-administrateur$ admin/control/Signalement.php [QSA]
+RewriteRule Liste-Utilisateur-administrateur$ admin/control/ListeUtilisateur.php [QSA]
+RewriteRule FAQ-administrateur$ admin/control/FAQ.php [QSA]
+RewriteRule Connection-administrateur$ admin/control/LogSign.php?page=Login [QSA]
+RewriteRule Inscription-administrateur$ admin/control/LogSign.php?page=SignIn [QSA]
+RewriteRule Confirmation-([a-zA-Z0-9_]*)-administrateur$ admin/control/Confirmation.php?page=$1 [QSA]
+RewriteRule Objet-([0-9]*)-administrateur$ admin/control/Objet.php?id=$1 [QSA]
+RewriteRule MonProfil-administrateur$ admin/control/PageProfile.php [QSA]
+RewriteRule Modification-Utilisateur-administrateur$ admin/control/ModifUtil.php [QSA]
+RewriteRule Modification-Utilisateurs-administrateur-([0-9]*)$ admin/control/ModifUtil.php?id=$1 [QSA]
+RewriteRule Mes-Objet-administrateur$ admin/control/voirObjet.php [QSA]
+RewriteRule Modification_de_Objet-([0-9]*)-([a-zA-Z0-9_]*)-administrateur$ admin/control/ModifObjet.php?idObjet=$1&nomObjet=$2 [QSA]

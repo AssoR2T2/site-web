@@ -1,0 +1,98 @@
+.erreur{
+    color: red;
+    text-align: start;
+}
+
+.erreurIncorrecte{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media(min-width: 1000px){
+    #FormConSign{
+        display: grid;
+        grid-template-areas: "TitleSign TitleSign" "NewEmail NewEmail" "NewPrenom NewNom"
+                            "NewPassword NewPassword" "NewConfPassword NewConfPassword"
+                            "ButtonSign ButtonSign";
+        gap:5px;
+        background-color: #05386B;
+        text-align: center;
+        color: #EDF5E1;
+        width: 50vw;
+        margin: 5% auto;
+        padding: 10px;
+    }
+    #FormLogin{
+        gap:5px;
+        background-color: #05386B;
+        text-align: center;
+        color: #EDF5E1;
+        width: 50vw;
+        margin: 5% auto;
+        padding: 10px;
+    }
+    
+    #TitleSign{
+        grid-area: TitleSign;
+    }
+    
+    #NewEmail{
+        grid-area: NewEmail;
+    }
+    
+    #NewPrenom{
+        grid-area: NewPrenom;
+    }
+    
+    #NewNom{
+        grid-area: NewNom;
+    }
+    
+    #NewPassword{
+        grid-area: NewPassword;
+    }
+    
+    #NewConfPassword{
+        grid-area: NewConfPassword;
+    }
+    
+    #ButtonSign{
+        grid-area: ButtonSign;
+    }
+    
+    .InputName{
+        width: auto;
+    }
+
+    #Email, #Prenom, #Nom, #NewPassword, #ConfPassword{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px){
+    #Email, #Prenom, #Nom, #NewPassword, #ConfPassword{
+        width: 100%;
+    }
+
+    #FormConSign{
+        display: flex;
+        flex-direction: column;
+        background-color: #05386B;
+        text-align: center;
+        width: auto;
+        color: #EDF5E1;
+        margin: 5% auto;
+        padding: 10px;
+    }
+
+    #FormLogin{
+        gap:5px;
+        background-color: #05386B;
+        text-align: center;
+        color: #EDF5E1;
+        width: auto;
+        margin: 5% auto;
+        padding: 10px;
+    }
+}

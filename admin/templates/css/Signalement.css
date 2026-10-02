@@ -1,0 +1,135 @@
+#formSignal{
+    margin: 1% 15%;
+    background-color: #05386B;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-areas: "imgSignalement imgSignalement" "img img" "name etat" "date lieu" "description description" "submit submit";
+    padding: 50px;
+    clip-path: polygon(1% 1%, 100% 0%,99% 99%,0% 100%);
+    gap:10px;
+}
+
+.TailleImage{
+    height: 30vh;
+}
+
+#imgSignalement{
+    grid-area: imgSignalement;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#img{
+    grid-area: img;
+    height: 5vh;
+    width: 20vw;
+    margin: auto;
+    color: #05386B;
+    font-size: 3vh;
+}
+
+#file{
+    display: none;
+}
+
+#name{
+    grid-area: name;
+}
+
+#etat{
+    grid-area: etat;
+}
+
+#etat:hover{
+    cursor: pointer;
+}
+
+#date{
+    grid-area: date;
+}
+
+#lieu{
+    grid-area: lieu;
+}
+
+#descriptionObjet{
+    grid-area: description;
+    resize: none;
+    height: 50vh;
+    border: none;
+}
+
+#submit{
+    grid-area: submit;
+    border:none;
+    height: 10vh;
+    width: 30vw;
+    background-color: #EDF5E1;
+    color:#05386B;
+    margin: 0 auto;
+    font-size: 5vh;
+    clip-path: polygon(2% 0%, 100% 5%, 98% 95%, 0% 100%);
+}
+
+#submit:hover{
+    background-color: #d4dcc9;
+}
+
+.inputSignal{
+    height: 8vh;
+    border: none;
+}
+
+#buttonSubmit{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px){
+    .TailleImage{
+        height: 15vh;
+    }
+
+    .inputSignal{
+        height: 5vh;
+        width: auto;
+        border: none;
+        font-size: 3vh;
+    }
+    #img{
+        grid-area: img;
+        height: auto;
+        width: auto;
+        margin: auto;
+        color: #05386B;
+        font-size: 2vh;
+    }
+    #formSignal{
+        margin: 1% auto;
+        background-color: #05386B;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 8%;
+        clip-path: polygon(1% 1%, 100% 0%,99% 99%,0% 100%);
+        gap:10px;
+    }
+    #submit{
+        grid-area: submit;
+        border:none;
+        height: auto;
+        width: 30vw;
+        background-color: #EDF5E1;
+        color:#05386B;
+        margin: 0 auto;
+        font-size: 3vh;
+        clip-path: polygon(2% 0%, 100% 5%, 98% 95%, 0% 100%);
+    }
+
+    #descriptionObjet{
+        font-size: 3vh;
+    }
+}

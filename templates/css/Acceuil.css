@@ -1,0 +1,12 @@
+#banner{
+    text-align: center;
+    background-color: white;
+}
+
+.textColorPrimary{
+    color: #166534;
+}
+
+@media screen and (max-width:800px){
+
+}

@@ -1,0 +1,20 @@
+#filtre{
+    color:#05386B;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#search{
+    width: 50%;
+}
+
+.ElementFiltre{
+    margin: 2px;
+}
+
+.FiltreTire{
+    background-color: #EDF5E1;
+    align-items: center;
+}

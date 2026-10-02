@@ -1,0 +1,104 @@
+#Accueil{
+    display:grid;
+    grid-template-areas: "item1 item2" "item3 item3";
+    grid-template-columns: 1fr 1fr;
+}
+
+#inscriptionFast{
+    grid-area: item1;
+    padding: 10%;
+    margin:10%;
+    background-color: #05386B;
+    clip-path: polygon(0% 10%, 100% 0%,100% 100%,0% 90%);
+}
+
+#presentation{
+    grid-area: item2;
+}
+
+#buttonSignalFast{
+    grid-area: item3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignalButton{
+    text-align: center;
+    font-size:5vh;
+    width: 50vw;
+    height: 10vh;
+    margin: 10%;
+    padding-top: 2%;
+    background-color: #EDF5E1;
+    color:#05386B;
+    clip-path: polygon(2% 8%, 100% 0%, 98% 95%, 0% 100%);
+}
+
+.SignalButton:hover{
+    background-color: #d4dcc9;
+}
+
+input::placeholder{
+    padding-left: 5px;
+    font-family: cursive;
+}
+
+.inputSignIn{
+    border:none;
+    height: 4vh;
+    margin: 1% 0;
+}
+
+.titre{
+    font-size: 2vw;
+    color:white;
+}
+
+#presentation{
+    margin: auto;
+    font-size: 2vw;
+}
+
+
+
+@media screen and (max-width:800px){
+    #Accueil{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #inscriptionFast{
+        padding: 10% 2%;
+        margin:10% 15%;
+        background-color: #05386B;
+        clip-path: polygon(0% 10%, 100% 0%,100% 100%,0% 90%);
+    }
+
+    .titre{
+        font-size: 5vw;
+    }
+
+    #presentation{
+        margin: 9%;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #buttonSignalFast{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SignalButton{
+        text-align: center;
+        font-size:4vh;
+        width: 50vw;
+        height: 5vh;
+        margin: 5%;
+        background-color: #EDF5E1;
+        color:#05386B;
+        clip-path: polygon(2% 8%, 100% 0%, 98% 95%, 0% 100%);
+    }
+}

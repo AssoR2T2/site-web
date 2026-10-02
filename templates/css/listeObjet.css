@@ -1,0 +1,100 @@
+
+
+@media(min-width: 800px){
+    .list{
+        display: flex;
+        flex-direction: row;
+        margin: 1% 0;
+        padding: 10px;
+        height: auto;
+        background-color: #05386B;
+        align-items: center;
+        clip-path: polygon(0% 2%, 100% 0%, 100% 100%, 0% 98%);
+    }
+
+    .imgPresentation{
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .PrensentationObjet{
+        padding-left: 10px;
+        display: grid;
+        grid-template-areas: "TitreObjet TitreObjet" "EtatObjet EtatObjet" "DateObjet LieuObjet" "Auteur Auteur";
+    }
+    
+    .TitreObjet{
+        grid-area: TitreObjet;
+    }
+    
+    .Etat{
+        grid-area: EtatObjet;
+    }
+    
+    .DateObjet{
+        grid-area: DateObjet;
+        margin-right: 10px;
+    }
+    
+    .LieuObjet{
+        grid-area: LieuObjet;
+    }
+    
+    .Auteur{
+        grid-area: Auteur;
+    }
+}
+
+@media(max-width: 800px){
+    .list{
+        font-size: 2vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        margin: 3% 0;
+        background-color: #05386B;
+        /*clip-path: polygon(0% 2%, 100% 0%, 100% 100%, 0% 98%);*/
+    }
+    
+    .imgPresentation{
+        margin:1%;
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .PrensentationObjet{
+        margin: 2%;
+        display: grid;
+        grid-template-areas: "TitreObjet TitreObjet ." "DateObjet LieuObjet EtatObjet" "Auteur Auteur .";
+        gap: 5%;
+    }
+    
+    .TitreObjet{
+        grid-area: TitreObjet;
+        margin: 0;
+    }
+    
+    .Etat{
+        grid-area: EtatObjet;
+        margin: 0;
+    }
+    
+    .DateObjet{
+        grid-area: DateObjet;
+        margin: 0;
+    }
+    
+    .LieuObjet{
+        grid-area: LieuObjet;
+        margin: 0;
+    }
+    
+    .Auteur{
+        grid-area: Auteur;
+        margin: 0;
+    }
+    
+    .ObjetP{
+        margin: 0;
+    }
+}

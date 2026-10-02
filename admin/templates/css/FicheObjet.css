@@ -1,0 +1,143 @@
+
+
+@media(min-width:1000px){
+    #modif{
+        background-color: green;
+        border: none;
+        text-align: center;
+        padding: 10% 0;
+    }
+
+    .FicheObjet{
+        margin: auto;
+        padding: 1%;
+        background-color: #05386B;
+        color: #EDF5E1;
+        width: 70vw;
+        display: grid;
+        grid-template-areas: "imageObjet description InfAuteur" "NomObjet . ." "InfObjet . .";
+        justify-items: stretch;
+    }
+
+    #imgContainer{
+        grid-area: imageObjet;
+    }
+
+    .imageObjet{
+        
+        width: 50%;
+    }
+    
+    #description{
+        grid-area: description;
+        padding: 5px;
+        height: auto;
+        width: auto;
+    }
+    
+    #InfAuteur{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+        grid-area: InfAuteur;
+    }
+    
+    #NomObjet{
+        grid-area: NomObjet;
+    }
+    
+    #InfObjet{
+        grid-area: InfObjet;
+    }
+    
+    #message{
+        resize: none;
+        width: auto;
+    }
+    
+    #submitMessage{
+        text-align: center;
+        background-color: #EDF5E1;
+        color: #05386B;
+    }
+
+    #Bannir{
+        background-color: red;
+        border: none;
+    }
+
+    #Bannir:hover{
+        background-color: rgba(255, 0, 0, 0.784);
+    }
+}
+
+@media(max-width:1000px){
+    #modif{
+        background-color: green;
+        border: none;
+        text-align: center;
+    }
+
+    .FicheObjet{
+        margin: auto;
+        padding: 1%;
+        background-color: #05386B;
+        color: #EDF5E1;
+        width: 70vw;
+        display: grid;
+        grid-template-areas: "imageObjet" "NomObjet " "description" "InfObjet" "InfAuteur";
+    }
+
+    #imgContainer{
+        grid-area: imageObjet;
+    }
+
+    .imageObjet{
+        
+        width: 50%;
+    }
+    
+    #description{
+        grid-area: description;
+        padding: 5px;
+        height: auto;
+        width: auto;
+    }
+    
+    #InfAuteur{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+        grid-area: InfAuteur;
+    }
+    
+    #NomObjet{
+        grid-area: NomObjet;
+    }
+    
+    #InfObjet{
+        grid-area: InfObjet;
+    }
+    
+    #message{
+        resize: none;
+        width: auto;
+    }
+    
+    #submitMessage{
+        text-align: center;
+        background-color: #EDF5E1;
+        color: #05386B;
+    }
+
+    #Bannir{
+        background-color: red;
+        border: none;
+    }
+
+    #Bannir:hover{
+        background-color: rgba(255, 0, 0, 0.784);
+    }
+}

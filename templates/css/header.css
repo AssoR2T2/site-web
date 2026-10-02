@@ -1,0 +1,132 @@
+.buttonMenu:hover, #login:hover{
+    color: #5CDB95;
+}
+
+.menu-floatant{
+    position: fixed;
+    display: inline;
+}
+
+@media(max-width: 800px) {
+    #menu{
+        display: none;
+    }
+
+    #connexion{
+        display: none;
+    }
+
+    .NavMenu{
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: -250px;
+        background-color: #05386B;
+        padding-top: 60px;
+        transition: right 0.5s ease;
+    }
+    
+    .NavMenu a{
+        padding: 8px  8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #EDF5E1;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .NavMenu a:hover{
+        color: #5CDB95;
+    }
+    
+    .NavMenu ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .NavMenu.active{
+        right:0;
+    }
+    
+    .NavMenu .close{
+        position: absolute;
+        top:0;
+        left: 25px;
+        font-size:36px;
+    }
+    
+    .burger-icon span{
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .burger{
+        position: absolute;
+        right: 1%;
+        top:2%;
+    }
+
+    #profile{
+        height: 80px;
+    }
+}
+
+@media(min-width: 800px){
+    #profile{
+        height: 80px;
+    }
+
+    .NavMenu{
+        display: none;
+    }
+
+    .buttonMenu{
+        background: none;
+        border: none;
+        font-family: Impact, Haettenschweiler, sans-serif;
+        font-size:2.2vw;
+    }
+    
+    #signIn{
+        position: relative;
+        text-align: center;
+        top: 30px;
+        left: 5px;
+        padding: 0 10px;
+        color:#05386B;
+        background-color: #EDF5E1;
+        align-content: center;
+        clip-path: polygon(0% 10%, 100% 0%,99% 98%,0% 100%);
+    }
+    
+    #signIn:hover{
+        background-color: #d4dcc9;
+    }
+
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 20%;
+        visibility: visible;
+    }
+
+    #connexion{
+        display: flex;
+        flex-direction: row;
+        height: 45px;
+        visibility: visible;
+    }
+
+    #barreSepar{
+        font-size:4vw;
+        font-weight: bold;
+        display: "";
+    }
+}

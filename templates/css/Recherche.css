@@ -1,0 +1,9 @@
+#pageRecherche{
+    margin: 1% 15vw;
+}
+
+@media(max-width: 800px){
+    #pageRecherche{
+        margin: 1% auto;
+    }
+}

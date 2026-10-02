@@ -1,0 +1,53 @@
+#blockcontact{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left:20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    border:solid #05386B;
+    background-color: #05386B;
+}
+
+#contact,#sujet,#nom,#message{
+    width: 67%;
+}
+
+.contacter{ 
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 5vh;
+    
+}
+#message{
+    resize:none;
+    background-color: rgba(49, 27, 105, 0.63);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 20vh;
+}
+textarea::placeholder{
+    font-family: cursive;
+}
+
+@media (max-width: 768px){
+    #blockcontact{
+        display: flex;
+        flex-direction: column;
+        
+        margin-left:4%;
+        margin-right: 4%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding: 5%;
+        border:solid #05386B;
+        background-color: #05386B;
+    }
+    p{
+    font-size: 72%;
+   }
+}
+
